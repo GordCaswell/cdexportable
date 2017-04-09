@@ -28,4 +28,7 @@ Var customUpgradeFromRegistryVersion
 		${EndIf}
 		RMDir /r "$INSTDIR\Other\InstallerUnicodeConversion"
 	${EndIf}
+	RMDir /r "$INSTDIR\App\CDex\$PLUGINSDIR"
+	Delete "$INSTDIR\App\CDex\uninstall.exe"
+	Delete "$INSTDIR\App\CDex\vcredist_x86.exe"
 !macroend
