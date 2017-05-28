@@ -30,5 +30,5 @@ Var customUpgradeFromRegistryVersion
 	${EndIf}
 	RMDir /r "$INSTDIR\App\CDex\$PLUGINSDIR"
 	Delete "$INSTDIR\App\CDex\uninstall.exe"
-	Delete "$INSTDIR\App\CDex\vcredist_x86.exe"
+	Delete "$INSTDIR\App\CDex\vc_redist.x86.exe"
 !macroend
