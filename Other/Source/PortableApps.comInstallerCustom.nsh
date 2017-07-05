@@ -26,9 +26,8 @@ Var customUpgradeFromRegistryVersion
 			Delete "$INSTDIR\Data\settings\CDEx.ini"
 			Rename "$INSTDIR\Data\settings\CDEx.ini-converted" "$INSTDIR\Data\settings\CDEx.ini"
 		${EndIf}
-		RMDir /r "$INSTDIR\Other\InstallerUnicodeConversion"
 	${EndIf}
-	RMDir /r "$INSTDIR\App\CDex\$PLUGINSDIR"
+	RMDir /r "$INSTDIR\App\CDex\$$PLUGINSDIR"
 	Delete "$INSTDIR\App\CDex\uninstall.exe"
 	Delete "$INSTDIR\App\CDex\vc_redist.x86.exe"
 !macroend
